@@ -239,15 +239,15 @@ a:focus-visible,button:focus-visible{outline:2px solid #60a5fa;outline-offset:2p
 
 <nav class="nav" role="navigation" aria-label="Site navigation">
   <a href="/" class="brand">chapter7vs13.org</a>
-  <button class="hamburger" aria-label="Toggle navigation menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+  <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" onclick="var n=this.nextElementSibling;var open=n.classList.toggle('open');this.setAttribute('aria-expanded',open);">&#9776;</button>
   <div class="nav-links">
-    <a href="/" class="active">Compare</a>
-    <a href="/chapter-7.html">Chapter 7</a>
-    <a href="/chapter-13.html">Chapter 13</a>
-    <a href="/means-test.html">Means Test</a>
-    <a href="/waiting-periods.html">Waiting Periods</a>
-    <a href="https://1328f.com">Discharge Screener</a>
-    <a href="https://1328f.org">Research</a>
+    <a href="/" class="active">Home</a>
+    <a href="/comparison.html">Side by Side</a>
+    <a href="/which-chapter.html">Which Chapter?</a>
+    <a href="/cost-comparison.html">Cost</a>
+    <a href="/timeline.html">Timeline</a>
+    <a href="/credit-impact.html">Credit Impact</a>
+    <a href="/conversion.html">Converting</a>
   </div>
 </nav>
 
